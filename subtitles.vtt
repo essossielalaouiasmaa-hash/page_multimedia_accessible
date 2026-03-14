@@ -1,0 +1,46 @@
+WEBVTT
+
+00:00.000 --> 00:00.003
+Bienvenue dans "30 jours pour apprendre à programmer en Python".
+
+00:00.003 --> 00:00.007
+Aujourd'hui, nous allons découvrir comment utiliser les variables en Python.
+
+00:00.007 --> 00:00.011
+Une variable, c'est un peu comme une boîte dans laquelle on peut stocker une valeur.
+
+00:00.011 --> 00:00.017
+Cette boîte a un nom qui permet de l'identifier et d'y accéder plus tard dans le code.
+
+00:00.017 --> 00:00.021
+En Python, certains noms de variables sont corrects alors que d'autres ne le sont pas.
+
+00:00.021 --> 00:00.025
+Officiellement, les noms de variables Python peuvent contenir des tirets bas,
+
+00:00.025 --> 00:00.028
+des minuscules et des majuscules.
+
+00:00.028 --> 00:00.031
+Attention : les noms de variables sont sensibles à la casse,
+
+00:00.031 --> 00:00.037
+ce qui signifie que "nom_de_variable" en minuscules et "NOM_DE_VARIABLE" en majuscules
+
+00:00.037 --> 00:00.039
+seront deux variables bien différentes.
+
+00:00.039 --> 00:00.043
+Dans un nom de variable, on peut également utiliser des chiffres,
+
+00:00.043 --> 00:00.046
+mais le premier caractère d'une variable ne peut pas être un chiffre.
+
+00:00.046 --> 00:00.051
+Enfin, il existe des noms dits "réservés" qui sont déjà utilisés par Python
+
+00:00.051 --> 00:00.056
+pour d'autres fonctionnalités. Vous ne pouvez donc pas les utiliser pour nommer vos variables.
+
+00:00.056 --> 00:01:00.000
+Pour voir la liste complète des mots réservés, tapez help("keywords").

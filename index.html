@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours Python - Page multimédia accessible </title>
+    <style>
+        .skip-link{
+            position: absolute;
+            left:-999px;
+        }
+        .skip-link:focus{
+            left:10px;
+            top:10px;
+            background:black;
+            color:white;
+            padding:8px;
+        }
+        body{
+            font-family: Arial,sans-serif;
+            background-color: #f4f6f9;
+            margin:0;
+            line-height: 1.6;
+        }
+        header{
+            background-color:#2c3e50;
+            color:white;
+            padding:20px;
+            text-align: center;
+        }
+        nav a{
+            color:wheat;
+            margin: 10px;
+            text-decoration:none ;
+
+        }
+        nav a:hover{
+            text-decoration: underline;
+        }
+        main{
+            padding: 20px;
+            max-width:900px;
+            margin: auto;
+            background: white;
+        }
+        section{
+            margin-bottom: 40px;
+        }
+        h2{
+            color: #2c3e50;
+        }
+        video, audio{
+            width:100%;
+            margin-top: 10px;
+        }
+        .gallery{
+            display:flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .gallery img{
+            width: 200px;
+            border-radius: 8px;
+        }
+        footer{
+            background:#2c3e50;
+            color:white;
+            text-align:center;
+            padding:10px;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <a href="#maincontent" class="skip-link">Aller au contenu principale</a>
+    <header>
+        <h1>Cours Python : Les Variables</h1>
+        <nav>
+            <a href="#video">Vidéo</a>
+            <a href="#podcast">Podcast</a>
+            <a href="#transcription">Transcription</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#youtube">Vidéo YouTube</a>
+        </nav>
+    </header>
+    <main id="maincontent">
+        <section id="video">
+            <h2>Vidéo du cours :</h2>
+            <video controls height="500px">
+               
+                <source src="video.mp4" type="video/mp4">
+                <track src="subtitles.vtt" kind="subtitles" srclang="fr" label="Français" default>
+                Votre navigateur ne supporte pas la video
+                
+            </video>
+
+        </section>
+
+        <section id="transcription">
+            <article>
+                <h2>Transcription : Les Variables en Python</h2>
+                <p> <strong>Narrateur :</strong>
+                  Bienvenue dans "30 jours pour apprendre à programmer en Python".Aujourd'hui, nous allons découvrir comment utiliser les variables.
+                </p>
+                <p>
+                    Une variable est comparable à une <em>boîte</em> de stockage identifiée par un nom unique.
+                </p>
+                <h3>Règles importantes : </h3>
+                <ul>
+                    <li>Utiliser des lettres (a-z, A-Z), des chiffres et des tirests bas(_).</li>
+                    <li><strong><mark>ATTENTION:</mark></strong> Python est sensible à la casse (majiscules ≠ miniscules).</li>
+                    <li>Un nom de variable ne doit jamais commencer par un chiffre.</li>
+                    <li>Évitez les mots réservés du langage.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="podcast">
+            <h2>Podcast : Variables en Python</h2>
+            <audio controls>
+                <source src="podcast.mp3" type="audio/mpeg">
+                Votre navigateur ne supporte pas l'audio.
+            </audio>
+
+            <h3>Transcription de podcast : </h3>
+            <p>
+                Camille <br>
+                Bienvenue à tous! Aujourd'hui, nous allons plonger dans le monde fascinant de Python, et notre sujet est, *roulement de tambour*, les variables!
+                    <br><br>
+                Louis <br>
+                Oh! Les variables... Qu'est-ce que c'est exactement? Je veux dire, un nom qui ressemble à quelque chose que l'on utilise pour, je ne sais pas, stocker... des données? C'est comme un conteneur, non?
+                <br><br>
+                Camille <br>
+                Exactement, c'est comme un conteneur! Imaginez que vous avez une boîte de rangement, et à l'intérieur de cette boîte, vous pouvez mettre différents types d'objets – des jouets, des livres, ou même des vêtements. En Python, les variables fonctionnent de cette manière : elles stockent des valeurs qui pourront être utilisées plus tard dans notre code.
+                <br><br>
+                Louis<br>
+                Hmm, est-ce que cela signifie qu'on peut donner à ces conteneurs des noms différents? Comme par exemple, si je veux stocker un nombre de pommes, je pourrais l'appeler "nombre_de_pommes"?
+                <br><br>
+                Camille<br>
+                Très bonne question! Oui, tous les conteneurs, ou plutôt les variables, ont des noms spécifiques. Les règles de base pour nommer vos variables en Python sont plutôt simples...
+                <br><br>
+                Louis<br>
+                Oui, je suis accro! Quelles sont ces règles?
+                <br><br>
+                Camille<br>
+                Alors, d'abord, un nom valide peut contenir des underscores, des lettres minuscules et majuscules. Mais, attention! Python est sensible à la casse, donc "variable_name" et "VARIABLE_NAME" sont deux variables complètement différentes.
+                <br><br>
+                Louis<br>
+                Hmm, c'est fou! Vous voulez dire que si j'écris "mon_variable", ça pourrait être quelque chose de complètement différent de "Mon_Variable"? Ça semble comme un code secret ou quelque chose comme ça!
+                <br><br>
+                Camille<br>
+                Oui, c'est ça! Si vous entrez ces deux noms, Python les traitera comme des entités distinctes. Et une autre règle intéressante est que vous pouvez utiliser des chiffres, mais pas au début du nom.
+                <br><br>
+                Louis<br>
+                Oh là là! Donc, je pourrais avoir "variable2" mais pas "2variable"? Ça me rappelle quand j'essayais de nommer mes personnages dans un jeu vidéo – je finissais toujours par créer des noms bizarres parce que tout était pris!
+                <br><br>
+                Camille<br>
+                Haha, exactement! C’est un peu la même chose. Et il y a des mots réservés en Python, des mots que vous ne pouvez pas utiliser comme noms de variables. Donc, des mots comme "if", "else", "while", "def", "class", et "import".
+                <br><br>
+                Louis<br>
+                Oh wow! Donc, si je tente de nommer ma variable "if", Python va me dire "Non, merci"?
+                <br><br>
+                Camille<br>
+                Oui, c'est exactement ça! Pour voir la liste complète, vous pouvez taper "help('keywords')" dans l'interpréteur Python. C'est comme une liste des ingrédients que vous ne pouvez pas utiliser dans votre recette de code.
+                <br><br>
+                Louis<br>
+                Super intéressant! Je sens que maîtriser ces conventions de nommage est crucial. C'est comme apprendre la grammaire d'une nouvelle langue, non?
+                <br><br>
+                Camille<br>
+                Oui, c'est tout à fait ça! Bien maîtriser ces conventions de nommage est fondamental pour écrire un code valide. Et les variables sont des outils essentiels pour gérer les données dans un programme.
+                <br><br>
+                Louis<br>
+                Hmm, je n'avais jamais pensé à la programmation de cette façon! C'est comme avoir une boîte à outils, mais chaque outil doit avoir un nom qui a du sens. Je suis vraiment excité d'en apprendre plus!
+            </p>
+
+        </section>
+
+        <section id="galerie">
+            <div class="gallery">
+                <figure>
+                    <img src="Images/logopython.jpeg" alt="Logo du langage Python" loading="lazy">
+                    <figcaption>Logo Officiel Python</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="Images/codePython.jpg" alt="Exemple de script Python - variables" loading="lazy">
+                    <figcaption>Exemple de code Python</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="Images/vscode&pycharm.jpg" alt="Editeure de Python" loading="lazy">
+                    <figcaption>Editeur de programmation Python</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="Images/variablesPython.jpeg" alt="Variables Python" loading="lazy">
+                    <figcaption>Les Variables-Python</figcaption>
+                </figure>
+
+            </div>
+
+        </section>
+
+        <section id="youtube">
+            <h2>Vidéo YouTube :</h2>
+            <div style="position: relative; padding-bottom:50% ; height: 0;">
+                <iframe src="https://youtu.be/y7b_Bp6jWYw?si=DEYgerb7fGHT-3Bh" title="Introduction sur Python" style="position: absolute;top: 0; left: 0;width: 100%;height:100% ;" frameborder="0"></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>TP HTML Multimédia Accessible</p>
+    </footer>
+
+</body>
+</html>
